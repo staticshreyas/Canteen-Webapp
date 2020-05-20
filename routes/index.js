@@ -5,7 +5,7 @@ var Cart =require('../models/cart');
 var Product = require('../models/product');
 var Order = require('../models/orders');
 var Contact =require('../models/contact');
-const nodemailer = require("nodemailer");
+/*const nodemailer = require("nodemailer");*/
 
 
 
