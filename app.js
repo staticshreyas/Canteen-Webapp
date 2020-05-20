@@ -23,6 +23,9 @@ var shopRouter =require('./routes/shop');
 
 var app = express();
 
+app.set('port', (process.env.PORT || 5000));
+
+
 mongoose.connect('mongodb://localhost:27017/canteen',{useNewUrlParser: true, useUnifiedTopology: true});
 require('./config/passport');
 
@@ -118,6 +121,9 @@ app.use(function(err, req, res, next) {
 });
 
 
+app.listen(app.get('port'),function () {
+    console.log('Node app is running');
+});
 
 
 

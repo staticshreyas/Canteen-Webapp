@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63073cc6-d33e-48d2-bd9e-341a15c3b8ed" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/canteen-app.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/shop.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/shop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/user.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,13 +32,16 @@
     </option>
   </component>
   <component name="ProjectId" id="1ZIlGmhi54EYns1z27KJEmrNIaq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -120,11 +124,24 @@
       <workItem from="1587573380256" duration="131000" />
       <workItem from="1587738928155" duration="798000" />
       <workItem from="1587905083086" duration="1401000" />
+      <workItem from="1587906543075" duration="165000" />
+      <workItem from="1587999492190" duration="229000" />
+      <workItem from="1588007019643" duration="100000" />
+      <workItem from="1588008696817" duration="216000" />
+      <workItem from="1588010895991" duration="205000" />
+      <workItem from="1589792365674" duration="525000" />
+      <workItem from="1589812748088" duration="3438000" />
+      <workItem from="1589819599605" duration="1125000" />
+      <workItem from="1589821334712" duration="118000" />
+      <workItem from="1590000817327" duration="245000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="445" y="223" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587564247329">
@@ -173,11 +190,13 @@
     <state x="283" y="115" key="SettingsEditor/0.23.1440.821@0.23.1440.821" timestamp="1587562948767" />
     <state x="283" y="115" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1584792017680" />
     <state x="283" y="115" key="SettingsEditor/0.23.1440.823@0.23.1440.823" timestamp="1584539726910" />
-    <state x="496" y="243" key="com.intellij.ide.util.TipDialog" timestamp="1587906561280">
+    <state x="496" y="243" key="com.intellij.ide.util.TipDialog" timestamp="1590000817195">
       <screen x="0" y="23" width="1440" height="816" />
     </state>
-    <state x="496" y="243" key="com.intellij.ide.util.TipDialog/0.23.1440.816@0.23.1440.816" timestamp="1587906561280" />
-    <state x="496" y="245" key="com.intellij.ide.util.TipDialog/0.23.1440.821@0.23.1440.821" timestamp="1587905083238" />
+    <state x="496" y="241" key="com.intellij.ide.util.TipDialog/0.23.1440.812@0.23.1440.812" timestamp="1588008697004" />
+    <state x="496" y="242" key="com.intellij.ide.util.TipDialog/0.23.1440.814@0.23.1440.814" timestamp="1588010898277" />
+    <state x="496" y="243" key="com.intellij.ide.util.TipDialog/0.23.1440.816@0.23.1440.816" timestamp="1590000817195" />
+    <state x="496" y="245" key="com.intellij.ide.util.TipDialog/0.23.1440.821@0.23.1440.821" timestamp="1589821335382" />
     <state x="496" y="245" key="com.intellij.ide.util.TipDialog/0.23.1440.822@0.23.1440.822" timestamp="1587557102250" />
     <state x="496" y="246" key="com.intellij.ide.util.TipDialog/0.23.1440.826@0.23.1440.826" timestamp="1584538867180" />
     <state x="479" y="64" width="670" height="674" key="search.everywhere.popup" timestamp="1587563472875">

@@ -100,7 +100,6 @@ router.get('/drinks', function(req, res, next) {
 
             productChunks.push(docs.slice(i, i + chunksize));
 
-
         }
         res.render('shop/drinks', {title: 'Shopping Cart', products: productChunks});
 

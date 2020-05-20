@@ -127,8 +127,8 @@ router.post('/charge', isLoggedIn, function (req,res) {
         service: "gmail",
         host: "smtp.gmail.com",
         auth: {
-            user: 'shreyas.mm@somaiya.edu', // generated ethereal user
-            pass:' zyxwmoreshreyas' // generated ethereal password
+            user: 'incrediblenerd2457@gmail.com', // generated ethereal user
+            pass: 'z1y2x3w4' // generated ethereal password
         },
         tls:{
             rejectUnauthorized: false
@@ -137,7 +137,7 @@ router.post('/charge', isLoggedIn, function (req,res) {
 
     // send mail with defined transport object
     let info = {
-        from: 'nandita.kadam@somaiya.edu', // sender address
+        user: 'incrediblenerd2457@gmail.com', // generated ethereal user
         to: req.user.email, // list of receivers
         subject: "Confirmation:",
         template:'/views/bills/bill',
@@ -147,7 +147,7 @@ router.post('/charge', isLoggedIn, function (req,res) {
         if(err){
             console.log(err);
         }
-        console.log('Email sent: '+inf.response);
+        console.log('Email sent: '+info.response);
 
     });
 
@@ -167,6 +167,7 @@ router.post('/shop/contact',function (req,res,next) {
     var contact = new Contact({
         name: req.body.name,
         email: req.body.email,
+        phone: req.body.phone,
         subject: req.body.subject,
         message: req.body.message
     });
@@ -182,8 +183,8 @@ router.post('/shop/contact',function (req,res,next) {
         service: "gmail",
         host: "smtp.gmail.com",
         auth: {
-            user: 'shreyas.mm@somaiya.edu', // generated ethereal user
-            pass:' zyxwmoreshreyas' // generated ethereal password
+            user: 'incrediblenerd2457@gmail.com', // generated ethereal user
+            pass:' z1y2x3w4' // generated ethereal password
         },
         tls:{
             rejectUnauthorized: false
@@ -193,7 +194,7 @@ router.post('/shop/contact',function (req,res,next) {
     // send mail with defined transport object
     let info = {
         from: req.body.email, // sender address
-        to: "nandita.kadam@somaiya.edu", // list of receivers
+        to: "incrediblenerd2457@gmail.com", // list of receivers
         subject: "Contact Request:", // Subject line
         text: "Name: " +req.body.name+ "\n"+
             "Email: "+req.body.email+"\n"+"Phone:"+req.body.phone+"\n"+"Message: "+req.body.message, // plain text body
@@ -202,7 +203,7 @@ router.post('/shop/contact',function (req,res,next) {
         if(err){
             console.log(err);
         }
-        console.log('Email sent: '+inf.response);
+        console.log('Email sent: '+info.response);
         res.render('shop/contact' , {message:'Email has been sent'});
 
     });

@@ -20,7 +20,6 @@ var cart;
 orders.forEach(function (order) {
     cart=new Cart(order.cart);
     order.items=cart.generateArray();
-
 });
 
         res.render('user/profile', {orders: orders, user: req.user});
