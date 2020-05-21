@@ -13,7 +13,6 @@ const validator= require('express-validator');
 var MongoStore= require('connect-mongo')(session);
 const Handlebars = require('handlebars');
 const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access');
-/*const nodemailer = require("nodemailer");*/
 
 
 var indexRouter = require('./routes/index');

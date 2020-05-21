@@ -123,7 +123,7 @@ router.post('/charge', isLoggedIn, function (req,res) {
     console.log(c);
 
 
-   /* let transporter = nodemailer.createTransport({
+    let transporter = nodemailer.createTransport({
         service: "gmail",
         host: "smtp.gmail.com",
         auth: {
@@ -149,7 +149,7 @@ router.post('/charge', isLoggedIn, function (req,res) {
         }
         console.log('Email sent: '+info.response);
 
-    });*/
+    });
 
 });
 
@@ -178,7 +178,7 @@ router.post('/shop/contact',function (req,res,next) {
         }
 
     });
-/*
+
     let transporter = nodemailer.createTransport({
         service: "gmail",
         host: "smtp.gmail.com",
@@ -207,7 +207,7 @@ router.post('/shop/contact',function (req,res,next) {
         res.render('shop/contact' , {message:'Email has been sent'});
 
     });
-*/
+
 
 });
 
