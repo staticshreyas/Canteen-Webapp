@@ -15,11 +15,10 @@ const Handlebars = require('handlebars');
 const {allowInsecurePrototypeAccess} = require('@handlebars/allow-prototype-access');
 
 
+
 var indexRouter = require('./routes/index');
 var userRoutes = require('./routes/user');
 var shopRouter =require('./routes/shop');
-
-
 
 
 var app = express();
@@ -27,47 +26,20 @@ var app = express();
 app.set('port', (process.env.PORT || 5000));
 
 
-mongoose.connect('mongodb://localhost:27017/canteen',{useNewUrlParser: true, useUnifiedTopology: true});
+
+/*mongoose.connect('mongodb://localhost:27017/canteen',{useNewUrlParser: true, useUnifiedTopology: true}) ||*/ mongoose.connect('mongodb://shreyas_more:z1y2x3w4@ds035856.mlab.com:35856/heroku_hmc4062j',{useNewUrlParser: true, useUnifiedTopology: true});
+
+
 require('./config/passport');
 
 // view engine setup
 app.engine('.hbs',expressHbs(
     {
-      defaultLayout: 'layout',
-      extname: '.hbs',
-      handlebars: allowInsecurePrototypeAccess(Handlebars),
-        helpers: { // This was missing
-            ifCond: function (v1, operator, v2, options) {
-
-                switch (operator) {
-                    case '==':
-                        return (v1 === v2) ? options.fn(this) : options.inverse(this);
-                    case '===':
-                        return (v1 === v2) ? options.fn(this) : options.inverse(this);
-                    case '!=':
-                        return (v1 !== v2) ? options.fn(this) : options.inverse(this);
-                    case '!==':
-                        return (v1 !== v2) ? options.fn(this) : options.inverse(this);
-                    case '<':
-                        return (v1 < v2) ? options.fn(this) : options.inverse(this);
-                    case '<=':
-                        return (v1 <= v2) ? options.fn(this) : options.inverse(this);
-                    case '>':
-                        return (v1 > v2) ? options.fn(this) : options.inverse(this);
-                    case '>=':
-                        return (v1 >= v2) ? options.fn(this) : options.inverse(this);
-                    case '&&':
-                        return (v1 && v2) ? options.fn(this) : options.inverse(this);
-                    case '||':
-                        return (v1 || v2) ? options.fn(this) : options.inverse(this);
-                    default:
-                        return options.inverse(this);
-                }
-            }
-        }
+        defaultLayout: 'layout',
+        extname: '.hbs',
+        handlebars: allowInsecurePrototypeAccess(Handlebars)
     }
 ));
-
 
 app.set('view engine', '.hbs');
 
@@ -77,11 +49,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(validator());
 app.use(cookieParser());
 app.use(session({
-  secret: 'mysupersecret',
-  resave: false,
-  saveUninitialized: false,
-  store: new MongoStore({mongooseConnection: mongoose.connection}),
-  cookie: {maxAge: 5*60*1000}
+    secret: 'mysupersecret',
+    resave: false,
+    saveUninitialized: false,
+    store: new MongoStore({mongooseConnection: mongoose.connection}),
+    cookie: {maxAge: 10*60*1000}
 }));
 
 app.use(flash());
@@ -91,12 +63,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use(function(req, res, next) {
-  res.locals.login = req.isAuthenticated();
-  res.locals.session = req.session;
-  next();
+    res.locals.login = req.isAuthenticated();
+    res.locals.session = req.session;
+    next();
 });
-
-
 
 app.use('/shop', shopRouter);
 app.use('/user',userRoutes);
@@ -107,24 +77,28 @@ app.use('/', indexRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  next(createError(404));
+    next(createError(404));
 });
 
 // error handler
 app.use(function(err, req, res, next) {
-  // set locals, only providing error in development
-  res.locals.message = err.message;
-  res.locals.error = req.app.get('env') === 'development' ? err : {};
+    // set locals, only providing error in development
+    res.locals.message = err.message;
+    res.locals.error = req.app.get('env') === 'development' ? err : {};
 
-  // render the error page
-  res.status(err.status || 500);
-  res.render('error');
+    // render the error page
+    res.status(err.status || 500);
+    res.render('error');
 });
+
+
 
 
 app.listen(app.get('port'),function () {
     console.log('Node app is running');
 });
+
+
 
 
 
