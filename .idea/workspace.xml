@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="63073cc6-d33e-48d2-bd9e-341a15c3b8ed" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/kjsce-canteen" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/images/.Biryani.jpg.icloud" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/images/.Hakka noodles.jpg.icloud" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/public/images/.bg_1.jpg.icloud" afterDir="false" />
@@ -159,7 +160,7 @@
       <workItem from="1589821334712" duration="118000" />
       <workItem from="1590000817327" duration="3106000" />
       <workItem from="1590004148641" duration="807000" />
-      <workItem from="1590055473459" duration="778000" />
+      <workItem from="1590055473459" duration="1104000" />
     </task>
     <servers />
   </component>
