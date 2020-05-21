@@ -48,6 +48,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -226,6 +227,10 @@
     <state x="496" y="245" key="com.intellij.ide.util.TipDialog/0.23.1440.821@0.23.1440.821" timestamp="1589821335382" />
     <state x="496" y="245" key="com.intellij.ide.util.TipDialog/0.23.1440.822@0.23.1440.822" timestamp="1587557102250" />
     <state x="496" y="246" key="com.intellij.ide.util.TipDialog/0.23.1440.826@0.23.1440.826" timestamp="1584538867180" />
+    <state x="533" y="340" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590056870739">
+      <screen x="0" y="23" width="1440" height="816" />
+    </state>
+    <state x="533" y="340" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.816@0.23.1440.816" timestamp="1590056870739" />
     <state x="479" y="64" width="670" height="674" key="search.everywhere.popup" timestamp="1587563472875">
       <screen x="0" y="23" width="1440" height="821" />
     </state>
